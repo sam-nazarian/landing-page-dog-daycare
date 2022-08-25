@@ -1,0 +1,49 @@
+/* .header-container { */
+  /* z-index: 1; */
+  /* width: 1200px; */
+  /* position: absolute; */
+
+  /* In relation to parent size */
+  /* left: 50%; */
+  /* bottom: 5rem; */
+
+  /* In relation to elm size */
+  /* transform: translate(-50%, -50%); */
+
+  /* background-color: violet; */
+  /* text-align: center; */
+/* } */
+
+/* h1{
+  font-weight: 700;
+  font-size: 5.2rem;
+  color: #1c7ed6; */
+  /* background-color: #cf711ffu; */
+  /* text-shadow: 2px 2px #000; */
+
+/* } */
+
+/* .dog-pic{
+  width: 20%;
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+/* video#bgvideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(placeholder.jpg) no-repeat;
+  background-size: cover;
+} */
