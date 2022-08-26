@@ -95,9 +95,8 @@
   padding-bottom: 0;
 
   background-color: rgba(255, 255, 255, 0.97);
-  z-index: 999;
+  z-index: 9999999999;
   box-shadow: 0 1.2rem 3.2 rgba(0, 0, 0, 0.03);
-
 }
 
 .sticky .section-hero {
@@ -151,9 +150,8 @@ h1 span {
   color: #339af0;
 }
 
-
 /******************/
-/* HOW IT WORKS SECTION */
+/* OUR SERVICES SECTION */
 /******************/
 
 .section-services {
@@ -191,7 +189,7 @@ h1 span {
 
 
 /******************/
-/* MEALS SECTION */
+/* Testimonial Section */
 /******************/
 
 .section-testimonials {
@@ -360,3 +358,80 @@ h1 span {
   font-size: 1.8rem;
   line-height: 1.8;
 }
+
+/******************/
+/* MAP SECTION */
+/******************/
+.section-map{
+  padding: 9.6rem;
+}
+
+.map-text{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;  
+}
+
+#map {
+  height: 70vh;
+  border-radius: 12px;
+  width: 100%;
+
+  /* max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto; */
+}
+
+/* Popup width is defined in JS using options */
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: #2d3439;
+  color: #ececec;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+  border-left: 5px solid #1864ab;
+  /* border-left: 5px solid #339af0; */
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content h4 {
+  font-size: 1.6rem;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content p {
+  font-size: 1.4rem;
+}
+
+/* tip of popup */
+.leaflet-popup .leaflet-popup-tip {
+  background-color: #2d3439;
+}
+
+/******************/
+/* TRUST SECTION */
+/******************/
+
+.section-trust {
+  background-color: #edf7fe;
+}
+
+
+.grid-trust{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9.6rem 0;
+}
+
+.section-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.maltese{
+  width: 100%;
+  border-radius: 12px;
+}
+

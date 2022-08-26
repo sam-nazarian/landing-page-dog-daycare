@@ -2,22 +2,11 @@
 <html lang="en">
 
 <head>
-  <!-- meta is metaData, data that describes other data -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- summary of content, apear in search engines -->
   <meta name="description" content="This is a dog daycare business." />
-
-  <!-- necessorly line for media queries to work, without it doesn't work on mobile devices as it zooms page out until it fits the screen, we want to make the design the device smaller -->
-  <!-- makes page match screens width, wihout zooming out -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- FAVICONS -->
-  <!-- <link rel="icon" href="img/favicon.png" /> -->
-  <!-- <link rel="apple-touch-icon" href="img/apple-touch-icon.png" /> -->
-  <!-- for Android -->
-  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,17 +16,17 @@
   <!-- STYLES -->
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style2.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <!-- <link rel="stylesheet" href="css/queries.css"> -->
 
-  <!-- IONICONS JS SCRIPT -->
-  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  <!-- JS -->
+  <script defer src="js/script.js"></script>
+
+  <!-- Leaflet api -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
 
   <!-- enable safari smooth-scrolling, polyfill(provides modern functionality on older browsers that do not natively support it.), js libary -->
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-
-  <!-- <script defer src="js/script.js"></script> -->
 
   <title>Dog &mdash; Daycare</title>
 </head>
@@ -141,9 +130,7 @@
 
     </section>
 
-
     <section class="section-testimonials" id="testimonials">
-
       <div class="testimonials-container">
 
         <span class="subheading">Testimonials</span>
@@ -155,7 +142,7 @@
           <figure class="testimonial">
             <img class="testimonial-img" src="img/customers/ana.jpg" alt="Photo of customer Dave Bryson" />
             <blockquote class="testimonial-text">
-              My dog LOVES going here!! I always feel like he is so well taken care of while at Saman's dog daycare! 
+              My dog LOVES going here!! I always feel like he is so well taken care of while at Saman's dog daycare!
             </blockquote>
             <p class="testimonial-name">&mdash; Ana Perez</p>
           </figure>
@@ -180,7 +167,7 @@
             <img class="testimonial-img" src="img/customers/judith.jpg" alt="Photo of customer Hannah Smith" />
             <blockquote class="testimonial-text">
               Our pup has been coming to Saman's daycare for the last 7 months and we have been very happy.
-            <p class="testimonial-name">&mdash; Judith Simmons</p>
+              <p class="testimonial-name">&mdash; Judith Simmons</p>
           </figure>
 
         </div>
@@ -230,11 +217,51 @@
 
     </section>
 
+    <section class="section-map">
+      <div class="container">
+
+        <div>
+          <span class="subheading">Map</span>
+          <h2 class="heading-secondary margin-bottom-sm">Find a location</h2>
+          <p class="map-text">Browse our locations to find a location near you. We hope to see you soon!</p>
+        </div>
+
+        <div id="map" class="container"></div>
+
+      </div>
+
+    </section>
+
+    <section class="section-trust">
+      <div class="container grid-trust">
+
+        <img src="img/maltese-bgblue.webp" alt="" class="maltese">
+
+        <div>
+          <span class="subheading">Trust</span>
+          <h2 class="heading-secondary margin-bottom-sm">Your furry friend is in safe hands</h2>
+          <p class="section-text">We have built our business around the foundation of Love, Leadership and Compassion.
+            We are not dog sitters we are care providers with a combined 30 years of experience in the dog care industry
+            backed by a long list of diplomas and certificates. We have designed our dog care services to be there for
+            all of your dog care needs, throughout all life stages. Trust and consistency is key to success in the dog
+            care industry and at Ruffin'It we treat your best friend like ours!</p>
+        </div>
+
+      </div>
+    </section>
+
 
   </main>
 
   <!-- main is for non-repeatable content, but footer keeps on repeating on different pages -->
 
+
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin="">
+  </script>
 </body>
 
 </html>
