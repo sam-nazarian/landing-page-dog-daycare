@@ -21,7 +21,11 @@ Paragraph default: 1.6
 0.75px
 
 --- 02 COLORS
-MAIN COLOR: #e67e22
+MAIN COLOR: #339af0
+
+
+
+#e67e22
 - Tints: 
 #fdf2e9
 #fae5d3
@@ -80,7 +84,7 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: #444;
 
   /* elm that overflow in x-axis will be hidden, only works if there is nothing absolutely positioned in relation to body, needs to be both on html & body elms */
   /* overflow-x: hidden; */
@@ -168,7 +172,10 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   /* color: #228be6; */
-  color: #1c7ed6;
+  /* color: #1c7ed6; */
+  /* color: #2e8bd8; */
+  /* color: #246ca8; */
+  color: #1a4d78;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
