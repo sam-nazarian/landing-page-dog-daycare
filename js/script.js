@@ -16,6 +16,32 @@ const marker = L.marker([49.883226, -97.155884]).addTo(map).bindPopup("<h4>Saman
 const yearEl = document.querySelector('.year');
 yearEl.textContent = new Date().getFullYear();
 
+
+// /////////////////////////////////////////////////////////
+// // Set Dates of 'From' & 'End' on service length section
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0 so need to add 1 to make it 1!
+var yyyy = today.getFullYear();
+if(dd<10){
+  dd='0'+dd
+} 
+if(mm<10){
+  mm='0'+mm
+} 
+
+today = yyyy+'-'+mm+'-'+dd;
+const formTimeFromElm = document.getElementById('form-time-from')
+const formTimeEndElm = document.getElementById('form-time-end')
+formTimeFromElm.setAttribute('value', today);
+formTimeFromElm.setAttribute('min', today);
+
+formTimeEndElm.setAttribute('value', today);
+formTimeEndElm.setAttribute('min', today);
+
+
+
+
 /////////////////////////////////////////////////////////
 // Make movile navigation work
 // const btnNavEl = document.querySelector('.btn-mobile-nav');
