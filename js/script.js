@@ -6,18 +6,18 @@ L.tileLayer('https://api.mapbox.com/styles/v1/saman2111/cl79xjeka001714n0hqhmd9m
   // attribution: '© OpenStreetMap',
 }).addTo(map);
 
-const marker = L.marker([49.883226, -97.155884]).addTo(map).bindPopup("<h4>Saman's Dog Daycare:</h4><p>120 Young St, Winnipeg, MB R3C 1Y6</p>").openPopup();;
 const marker2 = L.marker([49.865083, -97.198370]).addTo(map).bindPopup("<h4>Saman's Dog Daycare:</h4><p>Lanark Gardens, Winnipeg, MB R3N 1L3</p>").openPopup();;
+const marker = L.marker([49.883226, -97.155884]).addTo(map).bindPopup("<h4>Saman's Dog Daycare:</h4><p>120 Young St, Winnipeg, MB R3C 1Y6</p>").openPopup();;
 
 
 
 // /////////////////////////////////////////////////////////
 // // Set current year
-// const yearEl = document.querySelector('.year');
-// yearEl.textContent = new Date().getFullYear();
+const yearEl = document.querySelector('.year');
+yearEl.textContent = new Date().getFullYear();
 
-// /////////////////////////////////////////////////////////
-// // Make movile navigation work
+/////////////////////////////////////////////////////////
+// Make movile navigation work
 // const btnNavEl = document.querySelector('.btn-mobile-nav');
 // const headerEl = document.querySelector('.header');
 

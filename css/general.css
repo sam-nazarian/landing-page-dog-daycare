@@ -198,17 +198,16 @@ body {
 }
 
 .btn--form {
-  background-color: #45260a;
-  color: #fdf2e9;
-  align-self: flex-end;
-
+  background-color: #339af0;
+  color: #fff;
+  width: 49%;
+  
   /* same padding as input forms */
   padding: 1.2rem;
 }
 
 .btn--form:hover {
-  background-color: #fff;
-  color: #555;
+  background-color: #228be6;
 }
 
 .btn--full:link, .btn--full:visited {
@@ -296,7 +295,7 @@ body {
 }
 
 .margin-bottom-sm {
-  margin-bottom: 3.6rem
+  margin-bottom: 3.6rem !important;
 }
 
 .center-text {
@@ -305,4 +304,16 @@ body {
 
 strong {
   font-weight: 500;
+}
+
+
+.form-input {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
 }

@@ -1,3 +1,9 @@
+<p class="section-text">We have built our business around the foundation of Love, Leadership and Compassion.
+            We are not dog sitters we are care providers with a combined 30 years of experience in the dog care industry
+            backed by a long list of diplomas and certificates. We have designed our dog care services to be there for
+            all of your dog care needs, throughout all life stages. Trust and consistency is key to success in the dog
+            care industry and at Saman's Dog Care we treat your best friend like ours!</p>
+
 header of html
 
   <!-- FAVICONS -->

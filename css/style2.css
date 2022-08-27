@@ -179,10 +179,7 @@ h1 span {
 }
 
 .step-img {
-  /* unlike text images are not flexible until a Width/height is given */
-  /* width: 70%; */
-  width: 400px;
-  height: 460px;
+  width: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -435,3 +432,176 @@ h1 span {
   border-radius: 12px;
 }
 
+
+/******************/
+/* SECTION FORM */
+/******************/
+.section-form{
+  padding: 9.6rem;
+}
+
+.form-subheading{
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+  display: block;
+}
+
+.form-subheading-lrg{
+  font-size: 2.0rem;
+}
+
+/* .switch-field {
+	overflow: hidden;
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+.icon{
+  font-size: 3.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Hide radio button circles */
+.switch-field input {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch-field label {
+  border: 1px solid rgb(201, 207, 212);
+  padding: 1.8rem 3.6rem;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+  background-color: #f6f6f6;
+}
+
+/* 1st label that is selected after checked input */
+.switch-field input:checked + label {
+	background-color: #ddd;
+  /* color: #050505; */
+	/* box-shadow: none; */
+}
+
+
+.location-container select{
+  width: 50%;
+}
+
+
+.form-date-grid{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-time-from, #form-time-end {
+  width: 100%;
+}
+
+.arrow-container{
+  align-self: end;
+  font-size: 3.0rem;
+}
+
+.special-info-container textarea{
+  width: 49%;
+  height: 8.6rem;
+}
+
+/* .arrow-forward{ */
+  /* justify-self: end; */
+/* } */
+
+/******************/
+/* FOOTER */
+/******************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links{
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  
+  /* required margin so that this would be last elm of flex container */
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,.footer-link:visited{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: color 300ms;
+}
+
+.footer-link:hover, .footer-link:active{
+  color: #555;
+}
