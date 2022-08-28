@@ -476,6 +476,8 @@ h1 span {
 
 .switch-field label {
   border: 1px solid rgb(201, 207, 212);
+
+  /* MAYBE EDIT THIS LATER */
   padding: 1.0rem 2.0rem;
 
   border-radius: 12px;
