@@ -20,6 +20,7 @@
   <!-- STYLES -->
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/queries2.css">
 
   <!-- JS -->
   <script defer src="js/script.js"></script>
@@ -47,11 +48,11 @@
     <!-- nav used for navigation blocks on a page (stands for navigation)-->
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#how">How it works</a></li>
-        <li><a class="main-nav-link" href="#meals">Meals</a></li>
+        <li><a class="main-nav-link" href="#services">Our services</a></li>
         <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
-        <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-        <li><a class="main-nav-link nav-cta" href="#cta">Schedule daycare</a></li>
+        <li><a class="main-nav-link" href="#map-section">Map</a></li>
+        <li><a class="main-nav-link" href="#trust">Trust</a></li>
+        <li><a class="main-nav-link nav-cta" href="#form">Schedule Services</a></li>
       </ul>
     </nav>
 
@@ -76,7 +77,7 @@
     </section>
 
     <!-- section-services has background -->
-    <section class="section-services" id="how">
+    <section class="section-services" id="services">
       <!-- center the div -->
       <div class="container">
         <span class="subheading">Our Services</span>
@@ -222,7 +223,7 @@
 
     </section>
 
-    <section class="section-map">
+    <section class="section-map" id="map-section">
       <div class="container">
 
         <div>
@@ -237,7 +238,7 @@
 
     </section>
 
-    <section class="section-trust">
+    <section class="section-trust" id="trust">
       <div class="container grid-trust">
 
         <img src="img/maltese-bgblue.webp" alt="" class="maltese">
@@ -254,15 +255,15 @@
     </section>
 
 
-    <section class="section-form">
+    <section class="section-form" id="form">
       <div class="container">
         <span class="subheading">Schedule Services</span>
-        <h2 class="heading-secondary">Book our trusted dog care in your neighborhood</h2>
+        <h2 class="heading-secondary margin-bottom-sm">Book our trusted dog care in your neighborhood</h2>
 
         <form class="form-book" netlify>
 
           <p class="form-subheading form-subheading-lrg">What service are you looking for?</p>
-          <div class="switch-field grid grid--3-cols margin-bottom-sm">
+          <div class="switch-field grid grid--3-cols form-margin-bottom">
             <input type="radio" id="daycare" name="service-switch" value="daycare" checked />
             <label for="daycare">
               <ion-icon name="partly-sunny-outline" class="icon"></ion-icon>Daycare
@@ -282,7 +283,7 @@
           
 
           <p class="form-subheading form-subheading-lrg">What's your dog size?</p>
-          <div class="switch-field grid grid--4-cols margin-bottom-sm">
+          <div class="switch-field grid grid--4-cols form-margin-bottom">
             <input type="radio" id="small-dog" name="size-switch" value="small" checked />
             <label for="small-dog">
               <span class="center-text">Small<br>0 &mdash; 15 lbs</span>
@@ -306,7 +307,7 @@
 
 
           <!-- 4 col grid -->
-            <div class="location-container margin-bottom-sm">
+            <div class="location-container form-margin-bottom">
               <label for="form-location" class="form-subheading form-subheading-lrg">What is your preferred location?</label>
               <select name="location" id="form-location" class="form-input">
                 <option value="">Select an option</option>
@@ -316,7 +317,7 @@
             </div>
 
           <!-- 4 col grid -->
-          <div class="margin-bottom-sm">
+          <div class="form-margin-bottom">
             <p class="form-subheading form-subheading-lrg">How long do you need this service?</p>
 
             <div class="form-date-grid">
@@ -339,7 +340,7 @@
 
           </div>
 
-          <div class="special-info-container margin-bottom-sm">
+          <div class="special-info-container form-margin-bottom">
             <label for="special-info" class="form-subheading form-subheading-lrg">Add any special information/instructions</label>
             <textarea id="special-info" name="special-info" placeholder="Write here..."></textarea>
           </div>

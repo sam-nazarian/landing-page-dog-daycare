@@ -1,3 +1,7 @@
+  padding: 1.8rem 3.6rem;
+  padding: 1.6rem 3.2rem;
+  padding: 1.2rem 2.4rem;  
+  
   <footer class="footer">
     <div class="container grid grid--footer">
 
