@@ -250,112 +250,6 @@ h1 span {
   transform: scale(1.1)
 }
 
-.section-pricing {
-  padding: 9.6rem 0;
-}
-
-.pricing-plan{
-  border-radius: 11px;
-
-  /* 75% of available width */
-  width: 75%;
-}
-
-.princing-plan--starter{
-  justify-self: end;
-  border: 2px solid #fdf2e9;
-
-  /* remove 2px, as border adds 2px */
-  padding: 4.6rem;
-}
-
-.princing-plan--complete{
-  background-color: #fdf2e9;
-  padding: 4.8rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.princing-plan--complete::after {
-  content: "Best Value";
-  position: absolute;
-  top: 6%;
-  right: -18%;
-
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 700;
-  background-color: #ffd43b;
-  padding: 0.8rem 8rem ;
-  transform: rotate(45deg);
-}
-
-.plan-header {
-  text-align: center;
-  margin-bottom: 4.8rem;
-}
-
-.plan-name {
-  color: #cf711f;
-  font-weight: 600;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75;
-  margin-bottom: 3.2rem;
-}
-
-.plan-price {
-  font-size: 6.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 1.6rem;
-}
-
-.plan-price span {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-right: 0.8rem;
-}
-
-.plan-text {
- font-size: 1.6rem;
- line-height: 1.6;
- color: #6f6f6f;
-}
-
-.plan-sign-up {
-  margin-top: 4.8rem;
-  text-align: center;
-}
-
-.plan-details{
-  font-size: 1.6rem;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.feature-icon{
-  color: #e67e22;
-  height: 3.2rem;
-  width: 3.2rem;
-  background-color: #fdf2e9;
-  margin-bottom: 3.2rem;
-  padding: 1.6rem;
-  border-radius: 50%;
-}
-
-.feature-title{
-  font-size: 2.4rem;
-  color: #333;
-  font-weight: 700;
-  margin-bottom: 1.6rem;
-}
-
-.feature-text{
-  font-size: 1.8rem;
-  line-height: 1.8;
-}
-
 /******************/
 /* MAP SECTION */
 /******************/
@@ -409,7 +303,6 @@ h1 span {
   background-color: #edf7fe;
 }
 
-
 .grid-trust{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -451,17 +344,11 @@ h1 span {
   font-size: 2.0rem;
 }
 
-/* .switch-field {
+.switch-field {
 	overflow: hidden;
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  grid-template-columns: repeat(3, 1fr);
-} */
+}
 
 .icon{
-  /* font-size: 3.2rem; */
-
   font-size: 2.4rem;
   display: block;
   margin-bottom: 2px;
@@ -503,11 +390,9 @@ h1 span {
 	/* box-shadow: none; */
 }
 
-
 .location-container select{
   width: 50%;
 }
-
 
 .form-date-grid{
   display: grid;
@@ -546,10 +431,6 @@ h1 span {
   background-color: #228be6;
 }
 
-/* .arrow-forward{ */
-  /* justify-self: end; */
-/* } */
-
 /******************/
 /* FOOTER */
 /******************/
@@ -562,8 +443,6 @@ h1 span {
 .grid--footer {
   grid-template-columns: auto 1fr auto;
   justify-items: center;
-  /* align-items: center; */
-  /* grid-template-columns: 1fr auto 1fr; */
 }
 
 .logo-col {
@@ -592,9 +471,6 @@ h1 span {
   font-size: 1.4rem;
   line-height: 1.6;
   color: #767676;
-  
-  /* required margin so that this would be last elm of flex container */
-  margin-top: auto;
 }
 
 .footer-heading {
@@ -613,12 +489,13 @@ h1 span {
   margin-bottom: 2.4rem;
 }
 
-.footer-nav {
+/* might use later if I want to add more cols to footer */
+/* .footer-nav {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-}
+} */
 
 .footer-link:link,.footer-link:visited{
   text-decoration: none;
