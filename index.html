@@ -50,7 +50,7 @@
       <ul class="main-nav-list">
         <li><a class="main-nav-link" href="#services">Our services</a></li>
         <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
-        <li><a class="main-nav-link" href="#map-section">Map</a></li>
+        <li><a class="main-nav-link" href="#section-map">Map</a></li>
         <li><a class="main-nav-link" href="#trust">Trust</a></li>
         <li><a class="main-nav-link nav-cta" href="#form">Schedule Services</a></li>
       </ul>
@@ -146,7 +146,7 @@
         <div class="testimonials">
 
           <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/ana.jpg" alt="Photo of customer Dave Bryson" />
+            <img class="testimonial-img" src="img/customers/ana.jpg" alt="Photo of customer Ana Perez" />
             <blockquote class="testimonial-text">
               My dog LOVES going here!! I always feel like he is so well taken care of while at Saman's dog daycare!
             </blockquote>
@@ -154,7 +154,7 @@
           </figure>
 
           <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/franklin.jpg" alt="Photo of customer Ben Hadley" />
+            <img class="testimonial-img" src="img/customers/franklin.jpg" alt="Photo of customer Franklin May" />
             <blockquote class="testimonial-text">
               Such a fun daycare for dogs, my dog always comes home beyond happy.
             </blockquote>
@@ -162,7 +162,7 @@
           </figure>
 
           <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/matthew.jpg" alt="Photo of customer Steve Miller" />
+            <img class="testimonial-img" src="img/customers/matthew.jpg" alt="Photo of customer Matthew Robertson" />
             <blockquote class="testimonial-text">
               Awesome flexibility and great care for our dog, super friendly and knowledgeable staff
             </blockquote>
@@ -170,7 +170,7 @@
           </figure>
 
           <figure class="testimonial">
-            <img class="testimonial-img" src="img/customers/judith.jpg" alt="Photo of customer Hannah Smith" />
+            <img class="testimonial-img" src="img/customers/judith.jpg" alt="Photo of customer Judith Simmons" />
             <blockquote class="testimonial-text">
               Our pup has been coming to Saman's daycare for the last 7 months and we have been very happy.
               <p class="testimonial-name">&mdash; Judith Simmons</p>
@@ -223,7 +223,7 @@
 
     </section>
 
-    <section class="section-map" id="map-section">
+    <section class="section-map" id="section-map">
       <div class="container">
 
         <div>
@@ -232,25 +232,34 @@
           <p class="map-text">Browse our locations to find a location near you. We hope to see you soon!</p>
         </div>
 
-        <div id="map" class="container"></div>
+        <!-- class="container" -->
+        <div id="map"></div>
 
       </div>
 
     </section>
 
     <section class="section-trust" id="trust">
-      <div class="container grid-trust">
 
-        <img src="img/maltese-bgblue.webp" alt="" class="maltese">
+      <!-- container & grid-trust are seperate, cause otherwise padding would be overwritten -->
+      <div class="container">
 
-        <div>
-          <span class="subheading">Trust</span>
-          <h2 class="heading-secondary margin-bottom-sm">Your furry friend is in safe hands</h2>
-          <p class="section-text">We have built our business around the foundation of Love, Leadership and Compassion.
-            We are not dog sitters we are care providers with a combined 30 years of experience in the dog care industry
-            backed by a long list of diplomas and certificates. Trust and consistency is key to success in the dog
-            care industry and at Saman's Dog Care we treat your best friend like ours!</p>
+        <div class="grid-trust">
+
+          <img src="img/maltese-bgblue.webp" alt="" class="maltese">
+
+          <div>
+            <span class="subheading">Trust</span>
+            <h2 class="heading-secondary margin-bottom-sm">Your furry friend is in safe hands</h2>
+            <p class="section-text">We have built our business around the foundation of Love, Leadership and Compassion.
+              We are not dog sitters we are care providers with a combined 30 years of experience in the dog care
+              industry
+              backed by a long list of diplomas and certificates. Trust and consistency is key to success in the dog
+              care industry and at Saman's Dog Care we treat your best friend like ours!</p>
+          </div>
+
         </div>
+
       </div>
     </section>
 
@@ -262,7 +271,8 @@
 
         <form class="form-book" netlify>
 
-          <p class="form-subheading form-subheading-lrg">What service are you looking for?<span class="form-required">*</span></p>
+          <p class="form-subheading form-subheading-lrg">What service are you looking for?<span
+              class="form-required">*</span></p>
           <div class="switch-field grid grid--3-cols form-margin-bottom">
             <input type="radio" id="daycare" name="service-switch" value="daycare" checked />
             <label for="daycare">
@@ -308,7 +318,8 @@
 
           <!-- 4 col grid -->
           <div class="location-container form-margin-bottom">
-            <label for="form-location" class="form-subheading form-subheading-lrg">What is your preferred location?<span class="form-required">*</span></label>
+            <label for="form-location" class="form-subheading form-subheading-lrg">What is your preferred location?<span
+                class="form-required">*</span></label>
             <select name="location" id="form-location" class="form-input" required>
               <option value="">Select an option</option>
               <option value="youngst">120 Young St, Winnipeg, MB R3C 1Y6, CANADA</option>
@@ -318,7 +329,8 @@
 
           <!-- 4 col grid -->
           <div class="form-margin-bottom">
-            <p class="form-subheading form-subheading-lrg">How long do you need this service?<span class="form-required">*</span></p>
+            <p class="form-subheading form-subheading-lrg">How long do you need this service?<span
+                class="form-required">*</span></p>
 
             <div class="form-date-grid">
 
@@ -344,9 +356,10 @@
 
 
           <!-- class="form-margin-bottom" -->
-          
-          <label for="special-info" class="form-subheading form-subheading-lrg">Add any special information/instructions</label>
-          
+
+          <label for="special-info" class="form-subheading form-subheading-lrg">Add any special
+            information/instructions</label>
+
           <div class="cta-grid-2-cols">
             <div class="special-info-container">
               <textarea id="special-info" name="special-info" placeholder="Write here..."></textarea>
@@ -394,8 +407,8 @@
         <address class="contacts">
           <p class="address">Lanark Gardens, Winnipeg, MB R3N 1L3<br>Canada</p>
           <p>
-            <a class="footer-link" href="tel:415-201-6370">431-887-2577</a><br />
-            <a class="footer-link" href="mailto:hello@omnifood.com">contact@samanfathnazarian.com</a>
+            <a class="footer-link" href="tel:431-887-2577">431-887-2577</a><br />
+            <a class="footer-link" href="mailto:contact@samanfathnazarian.com">contact@samanfathnazarian.com</a>
           </p>
         </address>
       </div>

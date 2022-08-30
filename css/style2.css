@@ -42,9 +42,10 @@
   transition: color 300ms;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #1971c2;
+/* problem on mobile, after you click, it will always be on hover state */
+.main-nav-link:hover, .main-nav-link:active {
+  /* color: #1971c2; */
+  color: #1c7ed6;
 }
 
 /* use & to increase specificity so that it always applies */
@@ -55,11 +56,16 @@
   border-radius: 9px;
   color: #fff;
   background-color: #339af0;
+
+  transition: background-color 300ms;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #228be6;
+  /* background-color: #228be6; */
+  background-color: #1c7ed6;
+  /* background-color: #1971c2; */
+
 }
 
 /* MOBILE */
@@ -254,7 +260,7 @@ h1 span {
 /* MAP SECTION */
 /******************/
 .section-map{
-  padding: 9.6rem;
+  padding: 9.6rem 0;
 }
 
 .map-text{
@@ -330,7 +336,7 @@ h1 span {
 /* SECTION FORM */
 /******************/
 .section-form{
-  padding: 9.6rem;
+  padding: 9.6rem 0;
 }
 
 .form-subheading{
@@ -419,7 +425,8 @@ h1 span {
 
 .arrow-container{
   align-self: end;
-  font-size: 3.0rem;
+  /* font-size: 3.0rem; */
+  font-size: 2.4rem;
 }
 
 .special-info-container textarea{
@@ -448,7 +455,11 @@ h1 span {
 }
 
 .btn--form:hover {
-  background-color: #228be6;
+  /* background-color: #228be6; */
+
+  /* 1 shade darker than above */
+  background-color: #1c7ed6;
+  /* background-color: #1971c2; */
 }
 
 .cta-grid-2-cols {
