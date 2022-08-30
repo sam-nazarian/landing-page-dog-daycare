@@ -262,7 +262,7 @@
 
         <form class="form-book" netlify>
 
-          <p class="form-subheading form-subheading-lrg">What service are you looking for?</p>
+          <p class="form-subheading form-subheading-lrg">What service are you looking for?<span class="form-required">*</span></p>
           <div class="switch-field grid grid--3-cols form-margin-bottom">
             <input type="radio" id="daycare" name="service-switch" value="daycare" checked />
             <label for="daycare">
@@ -280,9 +280,9 @@
             </label>
           </div>
 
-          
 
-          <p class="form-subheading form-subheading-lrg">What's your dog size?</p>
+
+          <p class="form-subheading form-subheading-lrg">What's your dog size?<span class="form-required">*</span></p>
           <div class="switch-field grid grid--4-cols form-margin-bottom">
             <input type="radio" id="small-dog" name="size-switch" value="small" checked />
             <label for="small-dog">
@@ -307,24 +307,25 @@
 
 
           <!-- 4 col grid -->
-            <div class="location-container form-margin-bottom">
-              <label for="form-location" class="form-subheading form-subheading-lrg">What is your preferred location?</label>
-              <select name="location" id="form-location" class="form-input">
-                <option value="">Select an option</option>
-                <option value="youngst">120 Young St, Winnipeg, MB R3C 1Y6, CANADA</option>
-                <option value="lanark">Lanark Gardens, Winnipeg, MB R3N 1L3, CANADA</option>
-              </select>
-            </div>
+          <div class="location-container form-margin-bottom">
+            <label for="form-location" class="form-subheading form-subheading-lrg">What is your preferred location?<span class="form-required">*</span></label>
+            <select name="location" id="form-location" class="form-input" required>
+              <option value="">Select an option</option>
+              <option value="youngst">120 Young St, Winnipeg, MB R3C 1Y6, CANADA</option>
+              <option value="lanark">Lanark Gardens, Winnipeg, MB R3N 1L3, CANADA</option>
+            </select>
+          </div>
 
           <!-- 4 col grid -->
           <div class="form-margin-bottom">
-            <p class="form-subheading form-subheading-lrg">How long do you need this service?</p>
+            <p class="form-subheading form-subheading-lrg">How long do you need this service?<span class="form-required">*</span></p>
 
             <div class="form-date-grid">
-              
+
               <div>
                 <label for="form-from-time" class="form-subheading">From (yyyy/mm/dd)</label>
-                <input id="form-time-from" type="date" name="trip-start" value="2019-07-22" min="2018-01-01" max="2027-12-31" class="form-input">
+                <input id="form-time-from" type="date" name="trip-start" value="2019-07-22" min="2018-01-01"
+                  max="2027-12-31" class="form-input" required>
               </div>
 
               <div class="arrow-container">
@@ -333,19 +334,26 @@
 
               <div>
                 <label for="form-from-time" class="form-subheading">End (yyyy/mm/dd)</label>
-                <input id="form-time-end" type="date" name="trip-end" value="2018-07-22" min="2018-01-01" max="2027-12-31" class="form-input">
+                <input id="form-time-end" type="date" name="trip-end" value="2018-07-22" min="2018-01-01"
+                  max="2027-12-31" class="form-input" required>
               </div>
 
             </div>
 
           </div>
 
-          <div class="special-info-container form-margin-bottom">
-            <label for="special-info" class="form-subheading form-subheading-lrg">Add any special information/instructions</label>
-            <textarea id="special-info" name="special-info" placeholder="Write here..."></textarea>
-          </div>
 
-          <button class="btn btn--form">Submit Booking</button>
+          <!-- class="form-margin-bottom" -->
+          
+          <label for="special-info" class="form-subheading form-subheading-lrg">Add any special information/instructions</label>
+          
+          <div class="cta-grid-2-cols">
+            <div class="special-info-container">
+              <textarea id="special-info" name="special-info" placeholder="Write here..."></textarea>
+            </div>
+
+            <button class="btn btn--form">Submit Booking</button>
+          </div>
 
         </form>
 
@@ -370,13 +378,14 @@
               <ion-icon class="social-icon" name="logo-github"></ion-icon>
             </a></li>
           <li><a class="footer-link" href="https://samanfathnazarian.com" target="_blank">
-            <ion-icon class="social-icon" name="globe-outline"></ion-icon>
-          </a></li>
+              <ion-icon class="social-icon" name="globe-outline"></ion-icon>
+            </a></li>
         </ul>
       </div>
 
       <div class="copyright-container">
-        <p class="copyright">Copyright &copy; <span class="year">2030</span> by Saman Fathnazarian. All rights reserved.</p>
+        <p class="copyright">Copyright &copy; <span class="year">2030</span> by Saman Fathnazarian. All rights reserved.
+        </p>
       </div>
 
       <div class="address-col">

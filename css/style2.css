@@ -346,6 +346,11 @@ h1 span {
   font-size: 1.4rem;
 }
 
+.form-required {
+  color: #ff0000;
+  margin-left: 0.5rem;
+}
+
 .switch-field {
 	overflow: hidden;
 }
@@ -418,18 +423,25 @@ h1 span {
 }
 
 .special-info-container textarea{
-  width: 70%;
-  height: 6.2rem;
+  /* width: 70%; */
+  /* width: 50%; */
+  width: 100%;
+  /* height: 6.2rem; */
+  /* height: 5rem; */
   font-family: inherit;
   /* font-size: 1.8rem; */
   font-size: 1.4rem;
-  padding: 1rem
+  padding: 1rem;
+  border-radius: 9px;
+  resize: none;
 }
 
 .btn--form {
   background-color: #339af0;
   color: #fff;
-  width: 60%;
+  /* width: 60%; */
+  width: 100%;
+  /* align-self: end; */
   
   /* same padding as input forms */
   padding: 1.2rem;
@@ -437,6 +449,13 @@ h1 span {
 
 .btn--form:hover {
   background-color: #228be6;
+}
+
+.cta-grid-2-cols {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  /* column-gap: 6.4rem; */
+  column-gap: 3.0rem;
 }
 
 /******************/
