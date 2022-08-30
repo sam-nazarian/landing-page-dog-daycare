@@ -334,14 +334,16 @@ h1 span {
 }
 
 .form-subheading{
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.8;
   display: block;
 }
 
 .form-subheading-lrg{
-  font-size: 2.0rem;
+  /* font-size: 2.0rem; */
+  font-size: 1.4rem;
 }
 
 .switch-field {
@@ -349,7 +351,7 @@ h1 span {
 }
 
 .icon{
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   display: block;
   margin-bottom: 2px;
 }
@@ -364,13 +366,18 @@ h1 span {
 .switch-field label {
   border: 1px solid rgb(201, 207, 212);
 
-  /* MAYBE EDIT THIS LATER */
-  padding: 1.0rem 2.0rem;
+  /* MAYBE EDIT/CHANGE THIS LATER */
+  /* padding: 1.0rem 2.0rem; */
+  padding: 0.4rem 0;
 
   border-radius: 12px;
-  font-size: 1.8rem;
-  font-weight: 700;
+  /* font-size: 1.8rem; */
+  font-size: 1.4rem;
 
+  font-weight: 400;
+
+
+  font-family: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -411,10 +418,11 @@ h1 span {
 }
 
 .special-info-container textarea{
-  width: 80%;
-  height: 8.6rem;
+  width: 70%;
+  height: 6.2rem;
   font-family: inherit;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
+  font-size: 1.4rem;
   padding: 1rem
 }
 

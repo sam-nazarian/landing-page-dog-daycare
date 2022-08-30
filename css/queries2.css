@@ -1,11 +1,16 @@
-
-
 /* 
   >1104px
 */
-@media (min-width: 69em) {
+/* @media (min-width: 69em) {
 
-  /* html{
+  html{
     font-size: 35%;
-  } */
+  }
+} */
+
+
+@media (max-width: 59em){
+
 }
+
+/*  */

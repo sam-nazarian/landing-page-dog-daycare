@@ -133,8 +133,14 @@ strong {
 }
 
 .form-input {
-  padding: 1.2rem;
-  font-size: 1.8rem;
+  /* MAYBE EDIT/CHANGE THIS LATER */
+  /* padding: 1.2rem; */
+  padding: 0.8rem;
+
+  /* font-size: 1.8rem; */
+  font-size: 1.4rem;
+
+
   font-family: inherit;
   color: inherit;
   border: none;
