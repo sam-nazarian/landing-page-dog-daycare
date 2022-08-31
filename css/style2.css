@@ -29,7 +29,13 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+
+  /* doesn't work on Safari */
+  /* gap: 4.8rem; */
+}
+
+.main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -496,8 +502,13 @@ h1 span {
 .social-links{
   list-style: none;
   display: flex;
-  gap: 2.4rem;
   justify-content: center;
+
+  /* gap: 2.4rem; */
+}
+
+.social-links li:not(:last-child) {
+  margin-right: 2.4rem;
 }
 
 .social-icon {
