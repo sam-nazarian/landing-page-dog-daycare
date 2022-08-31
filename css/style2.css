@@ -421,8 +421,8 @@ h1 span {
 .form-date-grid{
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 #form-time-from, #form-time-end {
