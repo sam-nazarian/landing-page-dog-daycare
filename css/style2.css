@@ -556,3 +556,13 @@ h1 span {
 .footer-link:hover, .footer-link:active{
   color: #555;
 }
+
+
+.copyright-mobile{
+  display: none;
+
+  margin-top: auto;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+}

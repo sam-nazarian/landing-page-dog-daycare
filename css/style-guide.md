@@ -36,7 +36,7 @@ MAIN COLOR: #339af0
 #333
 
 --- 03 SHADOWS
-0 2.4rem 4.8rem rgba(0,0,0,0.075);
+0 1.64rem 4.8rem rgba(0,0,0,0.075);
 
 
 --- 04 border-radius

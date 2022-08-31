@@ -1,3 +1,13 @@
+/* 
+  >1104px
+*/
+/* @media (min-width: 69em) {
+  html{
+    font-size: 35%;
+  }
+} */
+
+
   padding: 1.8rem 3.6rem;
   padding: 1.6rem 3.2rem;
   padding: 1.2rem 2.4rem;  

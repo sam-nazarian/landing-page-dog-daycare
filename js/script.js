@@ -44,44 +44,44 @@ formTimeEndElm.setAttribute('min', today);
 
 /////////////////////////////////////////////////////////
 // Make movile navigation work
-// const btnNavEl = document.querySelector('.btn-mobile-nav');
-// const headerEl = document.querySelector('.header');
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
 
-// btnNavEl.addEventListener('click', function(){
-//   headerEl.classList.toggle('nav-open');
-// })
+btnNavEl.addEventListener('click', function(){
+  headerEl.classList.toggle('nav-open');
+})
 
 
 // /////////////////////////////////////////////////////////
 // // Smooth scrolling animations
 
-// // select anchor elm, with href property
-// const allLinks = document.querySelectorAll('a:link');
-// // console.log(allLinks);
+// select anchor elm, with href property
+const allLinks = document.querySelectorAll('a:link');
+// console.log(allLinks);
 
-// allLinks.forEach((link)=>{
-//   link.addEventListener('click', function(e){
-//     e.preventDefault();
-//     const href = link.getAttribute('href');
+allLinks.forEach((link)=>{
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+    const href = link.getAttribute('href');
     
-//     // Scroll back to top
-//     if(href === '#') window.scrollTo({top: 0, behavior: 'smooth'});
+    // Scroll back to top
+    if(href === '#') window.scrollTo({top: 0, behavior: 'smooth'});
     
-//     // Scroll to other links
-//     if(href !== '#' && href.startsWith('#') ){
-//       const sectionEl = document.querySelector(href);
+    // Scroll to other links
+    if(href !== '#' && href.startsWith('#') ){
+      const sectionEl = document.querySelector(href);
 
-//       sectionEl.scrollIntoView({behavior: 'smooth'});
+      sectionEl.scrollIntoView({behavior: 'smooth'});
 
-//       // Close mobile navigation
-//       headerEl.classList.remove('nav-open');
-//     }
+      // Close mobile navigation
+      headerEl.classList.remove('nav-open');
+    }
 
-//     // Another way to Close mobile navigation
-//     //only way it contians that class is if menu is open
-//     // if(link.classList.contains('main-nav-link')) headerEl.classList.remove('nav-open');
-//   })
-// })
+    // Another way to Close mobile navigation
+    //only way it contians that class is if menu is open
+    // if(link.classList.contains('main-nav-link')) headerEl.classList.remove('nav-open');
+  })
+})
 
 
 // /////////////////////////////////////////////////////////
