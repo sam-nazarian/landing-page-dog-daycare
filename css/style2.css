@@ -45,7 +45,7 @@
   color: #333;
   font-weight: 500;
   font-size: 1.8rem;
-  transition: color 300ms;
+  transition: color 300ms ease-out;
 }
 
 /* problem on mobile, after you click, it will always be on hover state */
@@ -63,7 +63,7 @@
   color: #fff;
   background-color: #339af0;
 
-  transition: background-color 300ms;
+  transition: background-color 300ms ease-out;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -255,7 +255,7 @@ h1 span {
 .gallery-item img {
   display: block;
   width: 100%;
-  transition: transform 400ms;
+  transition: transform 400ms ease-in-out;
 }
 
 .gallery-item img:hover {
@@ -400,6 +400,8 @@ h1 span {
   align-items: center;
   justify-content: center;
   box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+
+  transition: background-color 300ms ease-out;
 }
 
 .switch-field label:hover {
@@ -550,7 +552,7 @@ h1 span {
   text-decoration: none;
   font-size: 1.6rem;
   color: #767676;
-  transition: color 300ms;
+  transition: color 300ms ease-out;
 }
 
 .footer-link:hover, .footer-link:active{

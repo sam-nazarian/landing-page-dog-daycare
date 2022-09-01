@@ -104,7 +104,7 @@ body {
   cursor: pointer;
 
   /* Put transition on original "state" */
-  transition: background-color 300ms,box-shadow 300ms, color 300ms
+  transition: background-color 300ms ease-out,box-shadow 300ms ease-out, color 300ms ease-out;
 }
 
 /* * means, select every single elm */
