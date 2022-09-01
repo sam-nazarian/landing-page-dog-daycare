@@ -1,4 +1,4 @@
-const map = L.map('map', {scrollWheelZoom: false,}).setView([49.883226, -97.155884], 13);
+const map = L.map('map', {scrollWheelZoom: false, dragging: !L.Browser.mobile }).setView([49.883226, -97.155884], 11);
 
 // https://api.mapbox.com/styles/v1/saman2111/cl79xjeka001714n0hqhmd9mg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2FtYW4yMTExIiwiYSI6ImNsMHR2bXo2ZjBmM2ozZG11aDVhejF1MncifQ.3KrUHjHh3FoNFafvfPba_w
 L.tileLayer('https://api.mapbox.com/styles/v1/saman2111/cl79xjeka001714n0hqhmd9mg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2FtYW4yMTExIiwiYSI6ImNsMHR2bXo2ZjBmM2ozZG11aDVhejF1MncifQ.3KrUHjHh3FoNFafvfPba_w', {
@@ -55,33 +55,63 @@ btnNavEl.addEventListener('click', function(){
 // /////////////////////////////////////////////////////////
 // // Smooth scrolling animations
 
-// select anchor elm, with href property
-const allLinks = document.querySelectorAll('a:link');
-// console.log(allLinks);
+//using event delegation to limit num of eventListeners
+headerEl.addEventListener('click', function(e){
+  e.preventDefault();  
+  const target = e.target.closest('a');
+  if(target === null) return;
 
-allLinks.forEach((link)=>{
-  link.addEventListener('click', function(e){
-    e.preventDefault();
-    const href = link.getAttribute('href');
-    
-    // Scroll back to top
-    if(href === '#') window.scrollTo({top: 0, behavior: 'smooth'});
-    
-    // Scroll to other links
-    if(href !== '#' && href.startsWith('#') ){
-      const sectionEl = document.querySelector(href);
+  // href of target
+  /** @type{string} */
+  const href = target.getAttribute('href')
 
-      sectionEl.scrollIntoView({behavior: 'smooth'});
+  if(href === '#top') window.scrollTo({top: 0, behavior: 'smooth'});
 
-      // Close mobile navigation
-      headerEl.classList.remove('nav-open');
-    }
+  //starts with #, longer than 1 word, & is not #top,
+  if(href[0] === '#' && href.length > 1 && href !== '#top') {
+    const scrollToSectionEl = document.querySelector(href);
+    scrollToSectionEl.scrollIntoView({behavior: 'smooth'});
+  }
 
-    // Another way to Close mobile navigation
-    //only way it contians that class is if menu is open
-    // if(link.classList.contains('main-nav-link')) headerEl.classList.remove('nav-open');
-  })
+  // Close mobile navigation
+  headerEl.classList.remove('nav-open');
 })
+
+const footerLogoEl = document.querySelector('.footer-logo');
+
+footerLogoEl.addEventListener('click', function(e){
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+})
+
+
+// select anchor elm, with href property
+// const allLinks = document.querySelectorAll('a:link');
+// // console.log(allLinks);
+
+// allLinks.forEach((link)=>{
+//   link.addEventListener('click', function(e){
+//     e.preventDefault();
+//     const href = link.getAttribute('href');
+    
+//     // Scroll back to top
+//     if(href === '#') window.scrollTo({top: 0, behavior: 'smooth'});
+    
+//     // Scroll to other links
+//     if(href !== '#' && href.startsWith('#') ){
+//       const sectionEl = document.querySelector(href);
+
+//       sectionEl.scrollIntoView({behavior: 'smooth'});
+
+//       // Close mobile navigation
+//       headerEl.classList.remove('nav-open');
+//     }
+
+//     // Another way to Close mobile navigation
+//     //only way it contians that class is if menu is open
+//     // if(link.classList.contains('main-nav-link')) headerEl.classList.remove('nav-open');
+//   })
+// })
 
 
 // /////////////////////////////////////////////////////////

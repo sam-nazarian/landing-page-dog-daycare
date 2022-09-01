@@ -95,6 +95,17 @@
     display: block;
   }
 
+  .footer-logo {
+    text-align: center;
+  }
+
+  /* .logo-col {
+    text-align: center;
+  } */
+
+  /* .address-col {
+    text-align: center;
+  } */
 
   .grid--footer {
     grid-template-columns: 1fr 1fr;
@@ -328,6 +339,14 @@
 
   .location-container select{
     width: 65%;
+  }
+
+
+  .leaflet-popup-content-wrapper .leaflet-popup-content h4 {
+    font-size: 1.2rem;
+  }
+  .leaflet-popup-content-wrapper .leaflet-popup-content p {
+    font-size: 1.0rem;
   }
 
 }
