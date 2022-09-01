@@ -95,6 +95,13 @@
     display: block;
   }
 
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+
   .footer-logo {
     margin-bottom: 1.2rem;
   }
@@ -219,7 +226,110 @@
   /* make maltese image bigger */
   /* make "our services" picture smaller */
 
-  /* grid */
+  .grid--z-pattern{
+    column-gap: 2.4rem;
+    row-gap: 7.4rem;
+  }
+
+
+  .cta-grid-2-cols {
+    grid-template-columns: 1fr;
+    row-gap: 1.8rem;
+  }
+
+  .maltese{
+    width: 100%;
+  }
+
+  .grid--switch-field {
+    column-gap: 2.0rem;
+  }
+
+}
+
+/* <=546px */
+@media (max-width: 34.125em) {
+  
+  .grid--switch-field {
+    /* column-gap: 1.8rem; */
+    column-gap: 1.2rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+    /* justify-items: start; */
+    text-align: center;
+    row-gap: 6.2rem;
+  }
+
+  .footer-logo{
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-heading {
+    margin-bottom: 1.6rem;
+  }
+
+  .address {
+    margin-bottom: 1.0rem;
+  }
+
+  .social-links{
+    margin-bottom: 1rem;
+  }
+
+  .maltese {
+    width: 100%;
+  }
+
+  #map {
+    /* height: 50vh; */
+    height: 43vh;
+  }
+
+  .grid--z-pattern{
+    grid-template-columns: 1fr;
+    row-gap: 2.0rem;
+  }
+
+  .step-img-box:nth-child(3) {
+    grid-row: 4;
+  }
+
+  .step-img-box:not(:last-child){
+    margin-bottom: 5.2rem;
+  }
+
+  .heading-tertiary{
+    margin-bottom: 2.0rem;
+  }
+
+  .step-number{
+    margin-bottom: 1.2rem;
+  }
+
+  .testimonials{
+    grid-template-columns: 1fr;
+    row-gap: 3.6rem;
+  }
+
+  .testimonial-text{
+    margin-bottom: 1.2rem;
+  }
+
+
+  .heading-secondary{
+    margin-bottom: 4.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .location-container select{
+    width: 65%;
+  }
+
 }
 
 
