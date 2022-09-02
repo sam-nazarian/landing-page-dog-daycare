@@ -18,7 +18,6 @@
 
 .logo {
   height: 6.2rem;
-  /* height: 2.2rem; */
 }
 
 /******************/
@@ -30,7 +29,7 @@
   display: flex;
   align-items: center;
 
-  /* doesn't work on Safari */
+  /* doesn't work on Safari, instead used below selector */
   /* gap: 4.8rem; */
 }
 
@@ -50,7 +49,6 @@
 
 /* problem on mobile, after you click, it will always be on hover state */
 .main-nav-link:hover, .main-nav-link:active {
-  /* color: #1971c2; */
   color: #1c7ed6;
 }
 
@@ -68,10 +66,7 @@
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  /* background-color: #228be6; */
   background-color: #1c7ed6;
-  /* background-color: #1971c2; */
-
 }
 
 /* MOBILE */
@@ -202,8 +197,6 @@ h1 span {
 /******************/
 
 .section-testimonials {
-  /* background-color: #ebf5fe; */
-  /* background-color: #f1f9ff; */
   background-color: #edf7fe;
 
   display: grid;
@@ -279,10 +272,6 @@ h1 span {
   height: 70vh;
   border-radius: 12px;
   width: 100%;
-
-  /* max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto; */
 }
 
 /* Popup width is defined in JS using options */
@@ -292,7 +281,6 @@ h1 span {
   border-radius: 5px;
   padding-right: 0.6rem;
   border-left: 5px solid #1864ab;
-  /* border-left: 5px solid #339af0; */
 }
 
 .leaflet-popup-content-wrapper .leaflet-popup-content h4 {
@@ -346,7 +334,6 @@ h1 span {
 }
 
 .form-subheading{
-  /* font-size: 1.4rem; */
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.8;
@@ -354,7 +341,6 @@ h1 span {
 }
 
 .form-subheading-lrg{
-  /* font-size: 2.0rem; */
   font-size: 1.4rem;
 }
 
@@ -384,11 +370,9 @@ h1 span {
   border: 1px solid rgb(201, 207, 212);
 
   /* MAYBE EDIT/CHANGE THIS LATER */
-  /* padding: 1.0rem 2.0rem; */
   padding: 0.4rem 0;
 
   border-radius: 12px;
-  /* font-size: 1.8rem; */
   font-size: 1.4rem;
 
   font-weight: 400;
@@ -412,8 +396,6 @@ h1 span {
 /* 1st label that is selected after checked input */
 .switch-field input:checked + label {
 	background-color: #ddd;
-  /* color: #050505; */
-	/* box-shadow: none; */
 }
 
 .location-container select{
@@ -423,8 +405,6 @@ h1 span {
 .form-date-grid{
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 #form-time-from, #form-time-end {
@@ -433,18 +413,12 @@ h1 span {
 
 .arrow-container{
   align-self: end;
-  /* font-size: 3.0rem; */
   font-size: 2.4rem;
 }
 
 .special-info-container textarea{
-  /* width: 70%; */
-  /* width: 50%; */
   width: 100%;
-  /* height: 6.2rem; */
-  /* height: 5rem; */
   font-family: inherit;
-  /* font-size: 1.8rem; */
   font-size: 1.4rem;
   padding: 1rem;
   border-radius: 9px;
@@ -454,26 +428,19 @@ h1 span {
 .btn--form {
   background-color: #339af0;
   color: #fff;
-  /* width: 60%; */
   width: 100%;
-  /* align-self: end; */
   
   /* same padding as input forms */
   padding: 1.2rem;
 }
 
 .btn--form:hover {
-  /* background-color: #228be6; */
-
-  /* 1 shade darker than above */
   background-color: #1c7ed6;
-  /* background-color: #1971c2; */
 }
 
 .cta-grid-2-cols {
   display: grid;
   grid-template-columns: 45fr 55fr;
-  /* column-gap: 6.4rem; */
   column-gap: 3.0rem;
 }
 
@@ -505,8 +472,6 @@ h1 span {
   list-style: none;
   display: flex;
   justify-content: center;
-
-  /* gap: 2.4rem; */
 }
 
 .social-links li:not(:last-child) {

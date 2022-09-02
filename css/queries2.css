@@ -4,8 +4,6 @@
   .form-date-grid {
     grid-template-columns: 1fr;
     row-gap: 0.5rem;
-
-    /* justify-items: start; */
   }
 
   #form-time-from,
@@ -39,12 +37,6 @@
     font-size: 7.4rem;
   }
 
-  /* .grid {
-    column-gap: 2.4rem;
-    row-gap: 6.4rem;
-  } */
-
-
   .heading-secondary {
     /* font-size: 3.6rem; */
     font-size: 3.0rem;
@@ -56,7 +48,6 @@
 
   .testimonials-container {
     padding: 2.4rem 2.4rem 2.4rem 3rem;
-    /* padding: 9.6rem 3.2rem; */
   }
 
   .subheading {
@@ -82,10 +73,6 @@
 
 /* <= 955px */
 @media (max-width: 59.6875em) {
-
-  /* html {
-    font-size: 50%
-  } */
  
   .copyright-container {
     display: none;
@@ -98,14 +85,6 @@
   .footer-logo {
     text-align: center;
   }
-
-  /* .logo-col {
-    text-align: center;
-  } */
-
-  /* .address-col {
-    text-align: center;
-  } */
 
   .grid--footer {
     grid-template-columns: 1fr 1fr;
@@ -179,11 +158,6 @@
 
   .main-nav-list {
     flex-direction: column;
-    /* align-items: end; */
-    /* text-align: center; */
-
-    /* gap doesn't work on Safari */
-    /* gap: 4.8rem; */
   }
 
 
@@ -204,7 +178,6 @@
 @media (max-width: 49.25em) {
   .grid-trust {
     grid-template-columns: 1fr;
-    /* row-gap: 4.8rem; */
     row-gap: 2.4rem;
     justify-items: center;
     align-items: center;
@@ -236,12 +209,10 @@
 @media (max-width: 41.875em){
   /* make maltese image bigger */
   /* make "our services" picture smaller */
-
   .grid--z-pattern{
     column-gap: 2.4rem;
     row-gap: 7.4rem;
   }
-
 
   .cta-grid-2-cols {
     grid-template-columns: 1fr;
@@ -262,13 +233,11 @@
 @media (max-width: 34.125em) {
   
   .grid--switch-field {
-    /* column-gap: 1.8rem; */
     column-gap: 1.2rem;
   }
 
   .grid--footer {
     grid-template-columns: 1fr;
-    /* justify-items: start; */
     text-align: center;
     row-gap: 6.2rem;
   }
@@ -294,10 +263,7 @@
   }
 
   #map {
-    /* height: 50vh; */
-    /* height: 43vh; */
     height: 48vh;
-    /* height: 60vh; */
   }
 
   .grid--z-pattern{
@@ -347,7 +313,6 @@
   .leaflet-popup .leaflet-popup-content-wrapper {
     margin: 0;
     padding: 0.1rem 0;
-    /* padding: 1px 0; */
   }
 
   .leaflet-popup-content-wrapper .leaflet-popup-content h4 {
@@ -364,7 +329,6 @@
 
 
   .grid--switch-field {
-    /* column-gap: 2.0rem; */
     column-gap: 0.8rem;
     row-gap: 0.8rem;
   }
@@ -400,41 +364,3 @@
     width: 50%;
   }
 }
-
-
-
-/* <= 865px */
-/* @media (max-width: 54.0625em){
-  h1{
-    font-size: 2.0rem;
-  }
-} */
-
-
-/* <= 725px */
-/* @media (max-width: 45.3125em){
-  h1{
-    font-size: 1.6rem;
-  }
-} */
-
-
-
-/* <= 725px */
-/* @media (max-width: 45.3125em){
-  h1{
-    font-size: 1.6rem;
-  }
-} */
-
-
-/* <= 590px */
-/* @media (max-width: 36.875em){
-  h1{
-    font-size: 1.2rem;
-  }
-} */
-
-
-
-/* LESS THAN 280PX WIDTH */
