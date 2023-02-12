@@ -17,6 +17,26 @@
 
 }
 
+@media (pointer:none) and (max-width: 34.125em),
+(pointer:coarse) and (max-width: 34.125em) {
+
+  #form-time-from,
+  #form-time-end {
+    width: 40%;
+  }
+
+}
+
+@media (pointer:none) and (max-width: 25.625em),
+(pointer:coarse) and (max-width: 25.625em) {
+
+  #form-time-from,
+  #form-time-end {
+    width: 50%;
+  }
+
+}
+
 /* 1em = 16px */
 /* <= 1560px */
 /* make  h1 smaller */
@@ -73,7 +93,7 @@
 
 /* <= 955px */
 @media (max-width: 59.6875em) {
- 
+
   .copyright-container {
     display: none;
   }
@@ -90,7 +110,6 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
-
 
   .footer-logo {
     margin-bottom: 1.2rem;
@@ -160,8 +179,6 @@
     flex-direction: column;
   }
 
-
-
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
@@ -206,10 +223,11 @@
 }
 
 /* <=670px */
-@media (max-width: 41.875em){
+@media (max-width: 41.875em) {
+
   /* make maltese image bigger */
   /* make "our services" picture smaller */
-  .grid--z-pattern{
+  .grid--z-pattern {
     column-gap: 2.4rem;
     row-gap: 7.4rem;
   }
@@ -219,7 +237,7 @@
     row-gap: 1.8rem;
   }
 
-  .maltese{
+  .maltese {
     width: 100%;
   }
 
@@ -231,7 +249,7 @@
 
 /* <=546px */
 @media (max-width: 34.125em) {
-  
+
   .grid--switch-field {
     column-gap: 1.2rem;
   }
@@ -242,7 +260,7 @@
     row-gap: 6.2rem;
   }
 
-  .footer-logo{
+  .footer-logo {
     margin-bottom: 0.5rem;
   }
 
@@ -254,7 +272,7 @@
     margin-bottom: 1.0rem;
   }
 
-  .social-links{
+  .social-links {
     margin-bottom: 1rem;
   }
 
@@ -266,7 +284,7 @@
     height: 48vh;
   }
 
-  .grid--z-pattern{
+  .grid--z-pattern {
     grid-template-columns: 1fr;
     row-gap: 2.0rem;
   }
@@ -275,29 +293,29 @@
     grid-row: 4;
   }
 
-  .step-img-box:not(:last-child){
+  .step-img-box:not(:last-child) {
     margin-bottom: 5.2rem;
   }
 
-  .heading-tertiary{
+  .heading-tertiary {
     margin-bottom: 2.0rem;
   }
 
-  .step-number{
+  .step-number {
     margin-bottom: 1.2rem;
   }
 
-  .testimonials{
+  .testimonials {
     grid-template-columns: 1fr;
     row-gap: 3.6rem;
   }
 
-  .testimonial-text{
+  .testimonial-text {
     margin-bottom: 1.2rem;
   }
 
 
-  .heading-secondary{
+  .heading-secondary {
     margin-bottom: 4.8rem;
   }
 
@@ -305,8 +323,14 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .location-container select{
+  .location-container select {
     width: 65%;
+  }
+
+  .input-text {
+    width: 65%;
+    padding: 1.1rem;
+    font-size: 1.5rem;
   }
 
 
@@ -318,15 +342,10 @@
   .leaflet-popup-content-wrapper .leaflet-popup-content h4 {
     font-size: 1.2rem;
   }
+
   .leaflet-popup-content-wrapper .leaflet-popup-content p {
     font-size: 1.0rem;
   }
-
-  #form-time-from,
-  #form-time-end {
-    width: 40%;
-  }
-
 
   .grid--switch-field {
     column-gap: 0.8rem;
@@ -343,7 +362,7 @@
 /* <= 410px */
 @media (max-width: 25.625em) {
 
-  html{
+  html {
     font-size: 50%
   }
 
@@ -357,10 +376,5 @@
 
   h1 {
     font-size: 2.0rem;
-  }
-
-  #form-time-from,
-  #form-time-end {
-    width: 50%;
   }
 }

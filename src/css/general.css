@@ -47,18 +47,22 @@ body {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--center-v{
+.grid--center-v {
   align-items: center;
 }
 
-.heading-primary, .heading-secondary, .heading-tertiary {
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
@@ -86,7 +90,9 @@ body {
   letter-spacing: 0.75px;
 }
 
-.btn, .btn:link, .btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
   display: inline-block;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
@@ -99,7 +105,7 @@ body {
   cursor: pointer;
 
   /* Put transition on original "state" */
-  transition: background-color 300ms ease-out,box-shadow 300ms ease-out, color 300ms ease-out;
+  transition: background-color 300ms ease-out, box-shadow 300ms ease-out, color 300ms ease-out;
 }
 
 /* * means, select every single elm */
@@ -116,7 +122,7 @@ body {
   margin-bottom: 3.6rem !important;
 }
 
-.form-margin-bottom{
+.form-margin-bottom {
   margin-bottom: 1.8rem !important;
 }
 

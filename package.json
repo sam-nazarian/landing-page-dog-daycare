@@ -1,0 +1,19 @@
+{
+  "name": "landing-page-dog-daycare",
+  "version": "1.0.0",
+  "description": "A responsive website for a dog daycare business that allows users to book dog care services in their neighborhood.",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Saman Fathnazarian",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3"
+  }
+}

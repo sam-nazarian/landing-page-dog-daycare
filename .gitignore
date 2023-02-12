@@ -1,0 +1,10 @@
+node_modules
+
+dist
+.parcel-cache
+
+config.js
+
+# backup images
+hero-backup-2.jpg
+hero-backup-3.jpg
